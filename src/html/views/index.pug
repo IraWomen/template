@@ -1,6 +1,67 @@
 include ../includes/header.pug
 main.container
-section.form
-    div.form__text
-    form.form
+    section.feedback
+        .text
+            h3 Lorem ipsum dolor sit amet, consectetur
+            p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        form.form
+            h3.feedback__title Ut enim ad minim veniam
+            p quis nostrud exercitation ullamco laboris
+            label
+                input(placeholder="Имя" type="text")
+            label
+                input(placeholder="E-mail" type="e-mail")
+            button.form__button Отправить
+        h3.form__title Ut enim ad minim veniam
+        p quis nostrud exercitation ullamco laboris
+        p.feedback__phone +7 (8162) 12 34 56
+    .line Зачем мне это?
+    section.trust
+        h2 Нам доверяют
+        img.trust__company
+        form.form
+            img.trust__logo
+            h3.trust__title Оставь заявку
+            p и получи <span>10% скидку</span> на любой курс
+            label
+                input(placeholder="Имя" type="text")
+            label
+                input(placeholder="E-mail" type="e-mail")
+            button.form__button Отправить
+    .line А что есть?
+    section.what
+        .what__text
+            h2 Lorem ipsum dolor sit amet
+            p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            ul
+                li Индивидуальные занятия
+                li Занятия в паре
+                li Занятия в мини-группе
+                li Занятия в группе
+        .what__text
+            h2 Lorem ipsum dolor sit amet
+            p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            ul
+                li Индивидуальные занятия
+                li Занятия в паре
+                li Занятия в мини-группе
+                li Занятия в группе
+        .what__phone
+            p Позвоните нам и получите 500 рублей в подарок!
+            a(tel="+78162123456") +7 (8162) 12 34 56
+    .line А где?
+    section.where
+        .map
+        .where__text
+            h2 Lorem ipsum dolor sit amet, consectetur
+            p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            .where__address
+                h3 адрес
+                p Великий Новгород, <br/> ул. Б. Санкт-Петербургская 28, офис 578
+            .where__phone
+                h3 Телефон
+                a(tel="+78162123456") +7 (8162) 12 34 56
+            .where__email
+                h3 e-mail
+                a(href="mailto:example@mail.ru") example@mail.ru
 include ../includes/footer.pug
