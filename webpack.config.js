@@ -92,7 +92,6 @@ const config = {
       },
       {
         //не поняла почему не использует путь из общих настроек path: path.resolve(__dirname, "dist") для publicPath   ,
-        //ну и собственно не вижу результата
         test: /\.svg$/,
         include: path.resolve(__dirname, "src/svg"),
         loader: 'svg-sprite-loader',
